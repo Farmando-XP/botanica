@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #FFFFFF;
+    --preto: #000;
+    --verdeButtom: #87A871;
+    --verdeMenu: #6C8A59;
+    --cinza: #696969;
+    --font: 'Lato', sans-serif;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    background-color: var(--verdeMenu);
+}
+
+#menuDisplay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+
+nav#menuDisplay a {
+    font-family: var(--font);
+    color: var(--branco);
+
+    text-decoration: none;
+    text-transform:uppercase;    
+    font-weight: 600;
+    transition: .4s all ease-in-out;
+}
+
+
+nav#menuDisplay li {
+    list-style: none;
+    transition: .4s all ease-in-out;
+}
+
+#menuDisplay li a:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+    border-radius: 1.75rem;
+}
+
+
+img#menuLogo{
+    width: 20vh;
+}
+
+#menuListas li{
+   margin: 50px;
+}
+
+#menuListas{
+    display: flex;
+    flex-direction: row;    
+}
+
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 720px){
+    
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+}
+
+/*Laptop*/
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    
+}
+
+/*High-res laptop or desktop*/
+@media screen and (min-width: 1080px) and (max-width: 1920px){
+    
+}
+
+
