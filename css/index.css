@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
+
+body{
+    margin: 0;
+}
+
+:root{
+    --branco-text: #FFFFFF;
+    --preto-text: #000000;
+    --cinza-text: #696969;
+    --verde: #6C8A59;
+}
+
+.discoverProducts-container{
+    background-color: var(--verde);
+
+    display: flex;
+}
+
+.discoverProducts-container > h1, .discoverProducts-title{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    text-align: center;
+}
+
+.discoverProducts-container > h1{   
+    color: var(--branco-text);
+}
+
+.discoverProducts-items{
+    background-color: #F1F1F1;
+
+    border-radius: 10px;
+}
+
+.discoverProducts-items img{
+    width: 100%;
+
+    border-radius: 10px 10px 0px 0px;
+}
+
+.discoverProducts-description{
+    font-family: 'Lato';
+    font-style: normal;
+    text-align: center;
+
+    color: var(--preto-text);
+}
+
+@media screen and (max-width: 360px) {
+    .discoverProducts-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .discoverProducts-container > h1, .discoverProducts-title{
+        font-weight: 400;
+        letter-spacing: -0.08928562500000001vw;
+    }
+    
+    .discoverProducts-container > h1{
+        font-size: 10vw;
+        line-height: 14vw;
+    }
+    
+    .discoverProducts-items{
+        -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+        -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+        box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+    
+        width: 87.5vw;
+        height: 137.5vw;
+
+        margin-bottom: 10.9vw;
+    }
+
+    .discoverProducts-items article{
+        padding-block: 3.1vw;
+    }
+    
+    .discoverProducts-items img{
+        height: 62.5vw;
+    }
+    
+    .discoverProducts-title{
+        font-size: 7.5vw;
+        line-height: 8.75vw;
+    }
+    
+    .discoverProducts-description{
+        font-weight: 600;
+        font-size: 4.3vw;
+        line-height: 6vw;
+        letter-spacing: -0.08928562500000001vw;
+    }
+}
