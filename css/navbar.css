@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
 
 *{
     margin: 0;
@@ -13,76 +14,141 @@
     --verdeMenu: #6C8A59;
     --cinza: #696969;
     --font: 'Lato', sans-serif;
+    --fontTitle: 'Vibes', cursive;
 }
+
 
 header {
     width: 100vw;
-    position: fixed;
+    padding: 2%;
+    margin: 0 auto;
     background-color: var(--verdeMenu);
-}
 
-#menuDisplay{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;  
-    
-}
-
-nav#menuDisplay a {
-    font-family: var(--font);
-    color: var(--branco);
-
-    text-decoration: none;
-    text-transform:uppercase;    
-    font-weight: 600;
-    transition: .4s all ease-in-out;
-}
-
-
-nav#menuDisplay li {
-    list-style: none;
-    transition: .4s all ease-in-out;
-}
-
-#menuDisplay li a:hover{
-    background-color: var(--branco);
-    color: var(--preto);
-    border-radius: 1.75rem;
+    justify-content: space-between;
 }
 
 
 img#menuLogo{
     width: 20vh;
+    margin-left: 2em;
 }
 
-#menuListas li{
-   margin: 50px;
+
+nav#menuDisplay ul{
+    list-style: none;
+    
 }
 
 #menuListas{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+}
+
+.nav-list li{
+    margin: 10px;
+}
+
+.nav-list ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+
+    font-family: var(--font);
+    color: var(--branco);
+
+    margin-top: 15px;
+
+    text-decoration: none;
+    text-transform:uppercase;    
+    font-weight: 700;
+
+    border-radius: 1.75rem;
+    transition: .6s all;
 }
 
 
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--verdeMenu);
+    color: var(--branco);
+}
+
+.banner p{
+    font-family: var(--font);
+
+    width: 80%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.banner h1{
+    font-family: var(--fontTitle);
+    
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#btn-mobile{
+    display: none;
+}
+
 /*Mobile*/
 @media screen and (min-width: 360px) and (max-width: 720px){
+    #btn-mobile{
+        display: block;
+    }
     
+    #menuListas{
+        /*display: none;*/
+        display: block;
+       
+        background-color: var(--branco);
+    }
+
+    .nav-list ul li a{
+        padding: 10px 20px;
+
+        color: var(--cinza);
+    
+        transition: .6s all;
+    }
+
+    .nav-list ul li a:active{
+        background-color: var(--verdeButtom);
+        color: var(--preto);
+    }
+
+    #nav.active #menuListas{
+        display: flex;
+    }
 }
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px){
+
     
 }
 
 /*Laptop*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
+    .nav-list ul li a:hover{
+        background-color: var(--branco);
+        color: var(--preto);
+    }
     
 }
 
 /*High-res laptop or desktop*/
 @media screen and (min-width: 1080px) and (max-width: 1920px){
+    .nav-list ul li a:hover{
+        background-color: var(--branco);
+        color: var(--preto);
+    }
     
 }
 
