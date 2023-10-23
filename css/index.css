@@ -15,50 +15,7 @@ body{
   --green:green;
   --white:white;
   --black:black;
-  }
-.container_menuBox{
-  border: 1px transparent solid;
-  width: 80%;
-  margin: 3rem auto;
-  position: relative;
 }
-.triangle{
-  background: var(--white);
-  position: absolute;
-  height: 10rem;
-  width: 10rem;
-  right: 0;
-  -webkit-clip-path: polygon(100% 1%, 27% 81%, 100% 82%);
-  clip-path: polygon(100% 1%,27% 81%,100% 82%);
-  z-index: -1;
-}
-.square{
-  margin-top: 1.5rem;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding-block: 1.8rem;
-  align-items:center;
-}
-.square a{
-  text-decoration: none;
-  font-size:var(--fontLink1) ;
-  color:var(--black);
-}
-.square button{
-  font-size: var(--fontLink1);
-  background: var(--green);
-  border-radius: 25px;
-  padding: 10px;
-  border: 1px transparent solid;
-}
-.square button:hover{
-  background: transparent;
-  border: 1px var(--green) solid;
-  transition: .5s ease-in-out;
-}
-
 
 footer{
   margin-top: 2rem;
@@ -93,4 +50,5 @@ footer{
 
 .container_img{
   width: 30%;
+}
 }
