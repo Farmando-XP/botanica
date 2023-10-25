@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     margin: 0;
+    background: var(--green);
 }
 
 :root{
-    --branco-text: #FFFFFF;
-    --preto-text: #000000;
-    --cinza-text: #696969;
-    --verde: #6C8A59;
+    /* -- FONTES -- */
+  --fontLink1:1.17rem;
+  
+  /* --- CORES --- */
+  --green:green;
+  --white:white;
+  --black:black;
+  --branco-text: #FFFFFF;
+  --preto-text: #000000;
+  --cinza-text: #696969;
+  --verde: #6C8A59;
 }
 
 .discoverProducts-container{
@@ -147,4 +161,39 @@ body{
         letter-spacing: -0.035714166666666665vw;
         margin-top: 24.5vw;
     }
+}
+
+footer{
+  margin-top: 2rem;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+  align-items: center;
+  background: red;
+}
+.container_siteMap{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  
+}
+.container_img{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_img img{
+  width: 3rem;
+}
+@media screen and (min-width:768px) {
+  
+  .container_siteMap{
+    width: 50%;
+}
+
+.container_img{
+  width: 30%;
 }
