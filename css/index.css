@@ -42,7 +42,7 @@ body{
         height: 92.5vw;
     }
 
-    .products-items{
+    .products-items article{
         height: 116.1vw;
     
         padding-inline: 2.5vw;
