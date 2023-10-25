@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
 body{
     margin: 0;
@@ -92,5 +93,58 @@ body{
         font-size: 4.3vw;
         line-height: 6vw;
         letter-spacing: -0.08928562500000001vw;
+    }
+}
+
+.products-container{
+    display: flex;
+}
+
+.products-title, .products-description{
+    font-style: normal;
+    text-align: center;
+}
+
+.products-title{
+    font-family: 'Varela';
+    color: var(--preto-text);
+}
+
+.products-description{
+    font-family: 'Lato';
+    color: var(--cinza-text);
+}
+
+@media screen and (max-width: 360px) {
+    .products-container{
+        flex-direction: column;
+    }
+
+    .products-container img{
+        width: 100%;
+    
+        height: 92.5vw;
+    }
+
+    .products-items{
+        height: 116.1vw;
+    
+        padding-inline: 2.5vw;
+    }
+
+    .products-title{
+        font-weight: 400;
+        font-size: 8.40vw;
+        line-height: 11.66vw;
+        letter-spacing: -0.079365vw;
+        margin: 0;
+    }
+
+    .products-description{
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 8.33vw;
+        letter-spacing: -0.035714166666666665vw;
+        margin-top: 24.5vw;
     }
 }
