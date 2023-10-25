@@ -23,6 +23,7 @@ body{
   --preto-text: #000000;
   --cinza-text: #696969;
   --verde: #6C8A59;
+  --verde-escuro: #3B4B2F;
 }
 
 .products-container{
@@ -85,23 +86,27 @@ body{
 }
 
 footer{
-    margin-top: 2rem;
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 1rem 1.5rem 1rem;
     align-items: center;
-    background: red;
+    background: var(--verde-escuro);
   }
   .container_siteMap{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     
   }
+
+  .container_siteMap aside {
+    color: var(--branco-text);
+    font-family: 'Lato', sans-serif;
+  }
+
   .container_img{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
