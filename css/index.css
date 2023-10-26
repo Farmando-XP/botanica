@@ -159,6 +159,8 @@ footer{
     }
     
     .discoverProducts-container > h1{
+        margin-block: 10vw 12vw;
+
         font-size: 10vw;
         line-height: 14vw;
     }
@@ -183,11 +185,15 @@ footer{
     }
     
     .discoverProducts-title{
+        margin-block: 6vw;
+
         font-size: 7.5vw;
         line-height: 8.75vw;
     }
     
     .discoverProducts-description{
+        margin-top: 15vw;
+
         font-weight: 600;
         font-size: 4.3vw;
         line-height: 6vw;
