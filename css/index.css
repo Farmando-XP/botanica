@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: var(--green);
+}
+
+:root{
+    /* -- FONTES -- */
+  --fontLink1:1.17rem;
+  
+  /* --- CORES --- */
+  --green:green;
+  --white:white;
+  --black:black;
+  --branco-text: #FFFFFF;
+  --preto-text: #000000;
+  --cinza-text: #696969;
+  --verde: #6C8A59;
+  --verde-escuro: #3B4B2F;
+}
+
+.products-container{
+    display: flex;
+}
+
+.products-items{
+    background-color: var(--white);
+}
+
+.products-title, .products-description{
+    font-style: normal;
+    text-align: center;
+}
+
+.products-title{
+    font-family: 'Varela';
+    color: var(--preto-text);
+}
+
+.products-description{
+    font-family: 'Lato';
+    color: var(--cinza-text);
+}
+
+.discoverProducts-container{
+    background-color: var(--verde);
+
+    display: flex;
+}
+
+.discoverProducts-container > h1, .discoverProducts-title{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    text-align: center;
+}
+
+.discoverProducts-container > h1{   
+    color: var(--branco-text);
+}
+
+.discoverProducts-items{
+    background-color: #F1F1F1;
+
+    border-radius: 10px;
+}
+
+.discoverProducts-items img{
+    width: 100%;
+
+    border-radius: 10px 10px 0px 0px;
+}
+
+.discoverProducts-description{
+    font-family: 'Lato';
+    font-style: normal;
+    text-align: center;
+
+    color: var(--preto-text);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    align-items: center;
+    background: var(--verde-escuro);
+  }
+  .container_siteMap{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+
+  .container_siteMap aside {
+    color: var(--branco-text);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .container_img img{
+    width: 3rem;
+  }
+
+@media screen and (max-width: 360px) {
+    .products-container{
+        flex-direction: column;
+    }
+
+    .products-container img{
+        width: 100%;
+    
+        height: 92.5vw;
+    }
+
+    .products-items article{
+        height: 116.1vw;
+    
+        padding-inline: 2.5vw;
+    }
+
+    .products-title{
+        font-weight: 400;
+        font-size: 8.40vw;
+        line-height: 11.66vw;
+        letter-spacing: -0.079365vw;
+        margin: 0;
+    }
+
+    .products-description{
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 8.33vw;
+        letter-spacing: -0.035714166666666665vw;
+        margin-top: 24.5vw;
+    }
+
+    .discoverProducts-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .discoverProducts-container > h1, .discoverProducts-title{
+        font-weight: 400;
+        letter-spacing: -0.08928562500000001vw;
+    }
+    
+    .discoverProducts-container > h1{
+        margin-block: 10vw 12vw;
+
+        font-size: 10vw;
+        line-height: 14vw;
+    }
+    
+    .discoverProducts-items{
+        -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+        -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+        box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+    
+        width: 87.6vw;
+        height: 137.5vw;
+
+        margin-bottom: 10.9vw;
+    }
+
+    .discoverProducts-items article{
+        padding-bottom: 3.1vw;
+    }
+    
+    .discoverProducts-items img{
+        height: 62.5vw;
+    }
+    
+    .discoverProducts-title{
+        margin-block: 6vw;
+
+        font-size: 7.5vw;
+        line-height: 8.75vw;
+    }
+    
+    .discoverProducts-description{
+        margin-top: 15vw;
+
+        font-weight: 600;
+        font-size: 4.3vw;
+        line-height: 6vw;
+        letter-spacing: -0.08928562500000001vw;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container_siteMap{
+        width: 50%;
+    }
+
+    .container_img{
+        width: 30%;
+    }
+}
