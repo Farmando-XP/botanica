@@ -49,19 +49,35 @@ body{
     color: var(--cinza-text);
 }
 
-.discoverProducts-container{
+.discoverProducts-section{
     background-color: var(--verde);
 
-    display: flex;
+    padding-top: 2.5vw;
 }
 
-.discoverProducts-container > h1, .discoverProducts-title{
+.discoverProducts-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vw 1.5vw;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4vw;
+}
+
+.discoverProducts-section-title, .discoverProducts-items-title{
     font-family: 'ABeeZee';
     font-style: normal;
     text-align: center;
 }
 
-.discoverProducts-container > h1{   
+.discoverProducts-section-title{
+    font-weight: 400;
+    font-size: 3.13vw;
+    line-height: 3.8vw;
+    letter-spacing: -0.014880937500000002vw;
+
     color: var(--branco-text);
 }
 
@@ -69,20 +85,43 @@ body{
     background-color: #F1F1F1;
 
     border-radius: 10px;
+
+    width: 26vw;
+    height: 33.85vw;
+
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
 }
 
-.discoverProducts-items img{
+.discoverProducts-items-img{
     width: 100%;
 
     border-radius: 10px 10px 0px 0px;
 }
 
-.discoverProducts-description{
+.discoverProducts-items-title{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: -0.285714px;
+
+    margin-block: 1vw;
+}
+
+.discoverProducts-items-description{
     font-family: 'Lato';
     font-style: normal;
     text-align: center;
 
-    color: var(--preto-text);
+    margin-top: 3vw;
+
+    font-weight: 600;
+    font-size: 1vw;
+    line-height: 1.25vw;
+    letter-spacing: -0.014880937500000002vw;
+
+    color: var(--cinza-text);
 }
 
 footer{
@@ -148,28 +187,29 @@ footer{
         margin-top: 24.5vw;
     }
 
+    .discoverProducts-section{
+        padding-top: 10vw;
+    }
+
     .discoverProducts-container{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-    .discoverProducts-container > h1, .discoverProducts-title{
+    .discoverProducts-section-title, .discoverProducts-items-title{
         font-weight: 400;
         letter-spacing: -0.08928562500000001vw;
     }
     
-    .discoverProducts-container > h1{
-        margin-block: 10vw 12vw;
+    .discoverProducts-section-title{
+        margin-bottom: 12vw;
 
         font-size: 10vw;
         line-height: 14vw;
     }
     
     .discoverProducts-items{
-        -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
-        -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
-        box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.74);
-    
         width: 87.6vw;
         height: 137.5vw;
 
@@ -180,24 +220,26 @@ footer{
         padding-bottom: 3.1vw;
     }
     
-    .discoverProducts-items img{
+    .discoverProducts-items-img{
         height: 62.5vw;
     }
     
-    .discoverProducts-title{
+    .discoverProducts-items-title{
         margin-block: 6vw;
 
         font-size: 7.5vw;
         line-height: 8.75vw;
     }
     
-    .discoverProducts-description{
-        margin-top: 15vw;
+    .discoverProducts-items-description{
+        margin-top: 8vw;
 
         font-weight: 600;
         font-size: 4.3vw;
         line-height: 6vw;
         letter-spacing: -0.08928562500000001vw;
+
+        color: var(--preto-text);
     }
 }
 
