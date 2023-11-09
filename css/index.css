@@ -28,7 +28,7 @@ body{
   --verde-escuro: #3B4B2F;
 }
 
-/* MAIN */
+/* MAIN => DESKTOP => START */
 
 main {
     display: flex;
@@ -66,6 +66,8 @@ main h2 {
     line-height: normal;
     letter-spacing: -0.286px;
 }
+
+/* MAIN => DESKTOP => END */
 
 /* PRODUCTS-CONTAINER => DESKTOP => START */
 
@@ -246,6 +248,19 @@ footer{
 }
 
 @media screen and (max-width:768px) {
+    /* MAIN => DESKTOP => START */
+
+    main h1 {
+        font-size: 17vmin;
+    }
+
+    main h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /* MAIN => DESKTOP => END */
+
     /* PRODUCTS-CONTAINER => MOBILE => START */
 
     .products-items, .products-items.sabonete {
