@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
 
 * {
   margin: 0;
@@ -25,6 +26,45 @@ body{
   --cinza-text: #696969;
   --verde: #6C8A59;
   --verde-escuro: #3B4B2F;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding-inline: 5vw;
+
+    background-color: var(--verde);
+}
+
+main h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Vibes';
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+}
+
+main h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.286px;
 }
 
 /* PRODUCTS-CONTAINER => DESKTOP => START */
