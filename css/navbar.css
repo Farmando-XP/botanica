@@ -86,41 +86,13 @@ nav#nav-links ul{
 }
 
 
-/*Banner*/
-.banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: var(--verdeMenu);
-    color: var(--branco);
-}
-
-.banner p{
-    font-family: var(--font);
-    width: 85%;
-    font-size: 1.4em;
-    font-weight: 400;
-    text-align: center;
-}
-
-.banner h1{
-    font-family: var(--fontTitle);
-    font-weight: 400;
-    font-size: 3.7em;
-    text-transform: uppercase;
-    margin-top: 1em;
-}
-
-
 /*Mobile*/
 @media screen and (min-width: 220px) and (max-width: 720px){
     .nav-links ul li a{
-    color: var(--cinza);
-    font-size: 1em;
-    border-radius: 1.75rem;
-    line-height: 1.6em;  
+        color: var(--cinza);
+        font-size: 1em;
+        border-radius: 1.75rem;
+        line-height: 1.6em;  
     }
 
     .nav-links ul li a:focus{
@@ -137,49 +109,63 @@ nav#nav-links ul{
         background: var(--branco);
         height: auto;
         padding: 15px;
-        margin: 10px 1em 0 1em;
+        margin: 0 1em 0 1em;
         position: relative;
     }
 
     .nav-links li {
         margin: 20px;
     }
+
+    #clip-path{
+        height: 40px;
+        margin: 0 1em -0.5em 0.2em;
+        background-color: #FFFFFF;
+        clip-path: polygon(100% 0%, 90% 100%, 100% 100%);
+    }
 }
 
 /*Tablet*/
-@media screen and (min-width: 721px) and (max-width: 899px){
+@media screen and (min-width: 721px) and (max-width: 900px){
     .nav-links ul li a{
         color: var(--cinza);
         font-size: 1em;
         border-radius: 1.75rem;
         line-height: 1.6em;  
-        }
-    
-        .nav-links ul li a:focus{
-            background-color: var(--verdeButtom);
-            color: var(--preto);
-            text-decoration: none;
-        }
-    
-        .nav-link{
-        text-align: center;
-        }
-    
-        .nav-open {
-            background: var(--branco);
-            height: auto;
-            padding: 15px;
-            margin: 10px 1em 0 1em;
-        }        
-}
+    }
 
-/*Laptop*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
+    .nav-links ul li a:focus{
+        background-color: var(--verdeButtom);
+        color: var(--preto);
+        text-decoration: none;
+    }
 
+    .nav-link{
+    text-align: center;
+    }
+
+    .nav-open {
+        background: var(--branco);
+        height: auto;
+        padding: 15px;
+        margin: 0 1em 0 1em;
+        position: relative;
+    }
+
+    .nav-links li {
+        margin: 20px;
+    }
+
+    #clip-path{
+        height: 40px;
+        margin: 0 1em -0.5em 0.2em;
+        background-color: #FFFFFF;
+        clip-path: polygon(100% 0%, 90% 100%, 100% 100%);
+    }
 }
 
 /*High-res laptop or desktop*/
-@media screen and (min-width: 1080px) and (max-width: 1920px){
+@media screen and (min-width:901px) and (max-width: 1920px){
     .nav-toggle {
         display: none;
     }
@@ -213,13 +199,6 @@ nav#nav-links ul{
         color: var(--preto);
     }
 
-    .banner h1{
-        font-size: 6.5em;
-    }
-
-    .banner p{
-        font-size: 1.7em;
-    }
 
     .nav-link a{
         font-size: 1em;
