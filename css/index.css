@@ -124,10 +124,10 @@ main h2 {
     color: var(--cinza-text);
 }
 
-.discoverProducts-container{
+.discoverProducts-section{
+    padding-top: 3.5vw;
+    
     background-color: var(--verde);
-
-    padding-top: 2.5vw;
 }
 
 .discoverProducts-container{
