@@ -58,7 +58,7 @@ body{
 .discoverProducts-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 3vw 1.5vw;
+    gap: 3vw 2.5vw;
 
     align-items: center;
     justify-content: center;
@@ -102,9 +102,9 @@ body{
 
 .discoverProducts-items-title{
     font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: -0.285714px;
+    font-size: 1.77vw;
+    line-height: 2.03vw;
+    letter-spacing: -0.014880937500000002vw;
 
     margin-block: 1vw;
 }
