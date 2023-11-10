@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
 
 * {
   margin: 0;
@@ -9,6 +10,7 @@
 
 body{
     background: var(--green);
+    overflow-x: hidden;
 }
 
 :root{
@@ -26,30 +28,103 @@ body{
   --verde-escuro: #3B4B2F;
 }
 
-.products-container{
+/* MAIN => DESKTOP => START */
+
+main {
     display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding-inline: 5vw;
+
+    background-color: var(--verde);
 }
 
-.products-items{
-    background-color: var(--white);
-}
-
-.products-title, .products-description{
-    font-style: normal;
+main h1 {
+    color: #FFF;
     text-align: center;
+    font-family: 'Vibes';
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+}
+
+main h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.286px;
+}
+
+/* MAIN => DESKTOP => END */
+
+/* PRODUCTS-CONTAINER => DESKTOP => START */
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.products-items {
+    display: flex;
+    background-color: var(--white);
+
+    width: 100%;
+}
+
+.products-items > * {
+    width: 50%;
+    flex: 1;
+}
+
+.products-items.sabonete {
+    flex-direction: row-reverse;
+}
+
+.products-items article {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+}
+
+.products-items article > * {
+    width: 70%;
+}
+
+.products-items article h1 {
+    margin-bottom: 48px;
 }
 
 .products-title{
-    font-family: 'Varela';
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    font-size: 40px;
     color: var(--preto-text);
 }
 
 .products-description{
     font-family: 'Lato';
+    line-height: 30px;
     color: var(--cinza-text);
 }
 
-.discoverProducts-section{
+.discoverProducts-container{
     background-color: var(--verde);
 
     padding-top: 2.5vw;
@@ -155,37 +230,6 @@ footer{
   }
 
 @media screen and (max-width: 360px) {
-    .products-container{
-        flex-direction: column;
-    }
-
-    .products-container img{
-        width: 100%;
-    
-        height: 92.5vw;
-    }
-
-    .products-items article{
-        height: 116.1vw;
-    
-        padding-inline: 2.5vw;
-    }
-
-    .products-title{
-        font-weight: 400;
-        font-size: 8.40vw;
-        line-height: 11.66vw;
-        letter-spacing: -0.079365vw;
-        margin: 0;
-    }
-
-    .products-description{
-        font-weight: 700;
-        font-size: 5vw;
-        line-height: 8.33vw;
-        letter-spacing: -0.035714166666666665vw;
-        margin-top: 24.5vw;
-    }
 
     .discoverProducts-section{
         padding-top: 10vw;
@@ -241,6 +285,42 @@ footer{
 
         color: var(--preto-text);
     }
+}
+
+@media screen and (max-width:768px) {
+    /* MAIN => DESKTOP => START */
+
+    main h1 {
+        font-size: 17vmin;
+    }
+
+    main h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /* MAIN => DESKTOP => END */
+
+    /* PRODUCTS-CONTAINER => MOBILE => START */
+
+    .products-items, .products-items.sabonete {
+        flex-direction: column;
+    }
+
+    .products-items > * {
+        width: 100%;
+        flex: 1;
+    }
+
+    .products-items article > * {
+        width: 100%;
+    }
+
+    .products-title, .products-description {
+        text-align: center;
+    }
+
+    /* PRODUCTS-CONTAINER => MOBILE => END */
 }
 
 @media screen and (min-width:768px) {
