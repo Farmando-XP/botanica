@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botânica</title>
+    <!--Links - NAVBAR-->
+    <link rel="icon" href="./images/navbar/logo-header.png">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
 
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+        <!--NAVBAR - INICIO-->
+        <header>
+            <div class="navbar">
+                <div class="container flex-nav">
+                    <div class="nav-header">
+                        <div>
+                            <a href=""><img id="menuLogo" src="./images/navbar/logo-menu.png" alt="Logo Botânica"></a>
+                        </div>
+                        <button class="nav-toggle" id="navToggle">
+                            <i id="icon" class="bi bi-list"></i>
+                        </button>
+                    </div>
+                    <div class="balao2">
+                        <div id="clip-path"></div>   
+                        <nav class="nav-links" id="nav-links">
+                            <ul>
+                                <li class="nav-link"><a href="./index.html#produto">BOTÂNICA</a></li>
+                                <li class="nav-link"><a href="#">PRODUTOS</a></li>
+                                <li class="nav-link"><a href="#">CONTATO</a></li>
+                                <li class="nav-link"><a href="#"><span>comprar</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!--NAVBAR - FIM-->
+
     <main>
         <h1>BOTÂNICA</h1>
         <h2>
@@ -16,6 +50,7 @@
         </h2>
     </main>
     <section class="products-container">
+
         <div class="products-items sabonete">
             <img src="./images/products/saboArgilaBrancaeDolomita.png" alt="Imagem do Produto: Sabonete argila branca e dolomita">
             <article>
@@ -144,6 +179,8 @@
             <img src="./images/footer/compras.svg" alt="Produtos">
             <img src="./images/footer/Instagram.svg" alt="Instagram">
         </div>
-	</footer> 
+    </footer>
+
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
