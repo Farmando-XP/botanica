@@ -13,6 +13,10 @@ body{
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root{
     /* -- FONTES -- */
   --fontLink1:1.17rem;
@@ -216,7 +220,10 @@ footer{
 
   .container_siteMap aside {
     color: var(--branco-text);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.129px;
   }
 
   .container_img{
@@ -329,6 +336,6 @@ footer{
     }
 
     .container_img{
-        width: 30%;
+        width: 50%;
     }
 }
